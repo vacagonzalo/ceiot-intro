@@ -1,18 +1,15 @@
 #include "Plant.h"
-namespace Plant {
-State Step(State P, Coeficient K, double input) {
-  double uTemp = P.u;
-  P.uOld = input;
 
-  P.yOld = P.y;
+float Plant::Step(float input) {
+  _old_input = _input;
+  _old_output = _output;
 
-  double A = K.a * P.u;
-  double B = K.b * P.uOld;
-  double C = 2 * K.c * P.yOld;
-  double D = K.d * K.d;
+  _input = input;
+  _output = _a * _input + _b * _old_input - 2 * _c * _old_output - _d * _d;
 
-  P.y = A + B - C - D;
-
-  return P;
+  return _output;
 }
-} // namespace Plant
+
+float Plant::Output() {
+    return _output;
+}
