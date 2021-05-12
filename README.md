@@ -13,3 +13,6 @@ Es completamente configurable.
 
 https://youtu.be/82JkSxRnMWo
 
+## Diagrama en bloques
+
+![alt text](conexiones.png "Diagrama en bloques")
