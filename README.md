@@ -8,3 +8,8 @@ Gonzalo Nahuel Vaca
 
 Este proyecto es una simulación de un sistema físico que se comporta como una oscilación amortiguada.
 Es completamente configurable.
+
+## Demostración
+
+https://youtu.be/82JkSxRnMWo
+
