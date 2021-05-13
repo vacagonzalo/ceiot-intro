@@ -18,6 +18,14 @@ Hay una entrada analógica para conectar un controlador o un potenciómetro que 
 
 Es una herramienta útil para practicar métodos de sintonización de *PID* o estimaciones de modelos de planta.
 
+## Requisitos
+
+* Mbed Studio
+* 1 - cable USB
+* 1 - display LCD 2x16
+* 1 - placa NUCLEO-F429ZI
+* 2 - pulsadores
+
 ## Demostración
 
 https://youtu.be/82JkSxRnMWo
@@ -27,5 +35,5 @@ https://youtu.be/82JkSxRnMWo
 ![alt text](conexiones.png "Diagrama en bloques")
 
 ## Licencia (License)
-Apache 2.0 license.
+[Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0).
 
