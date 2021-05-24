@@ -18,6 +18,22 @@ Hay una entrada analógica para conectar un controlador o un potenciómetro que 
 
 Es una herramienta útil para practicar métodos de sintonización de *PID* o estimaciones de modelos de planta.
 
+## Cómputo del paso de planta
+
+El cálculo más importante del sistema es la resolución del nuevo valor de salida de la planta al siguiente *step*.
+Esto se logra según se expone en el siguiente pseudo código:
+
+```python
+def Step(actuatorValue):
+    oldInput = Input
+    oldOutput = Output
+    Input = actuatorValue
+    Output = A * Input + B * oldInput - 2 * C * oldOutput - D^2
+```
+
+**A**, **B**, **C** y **D** son constantes que definen el comportamiento de la planta.
+**actuatorValue** es el valor de entrada que ingresa desde el exterior y **Output** es el resultado del cómputo.
+
 ## Requisitos
 
 * Mbed Studio
